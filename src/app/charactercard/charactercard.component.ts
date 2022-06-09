@@ -14,7 +14,6 @@ export class CharactercardComponent implements OnInit {
   constructor(private rickmortyService: RickmortyService) { }
 
   ngOnInit(){
-    this.rickmortyService.retornar().
-    subscribe(result =>  this.personajes = result)
+    this.personajes = this.rickmortyService.retornar();
 }
 }
